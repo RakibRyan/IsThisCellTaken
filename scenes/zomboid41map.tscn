@@ -10506,14 +10506,21 @@ tile_set = ExtResource("3_vwjdp")
 format = 2
 layer_0/tile_data = PackedInt32Array(1376287, 131072, 0, 1376288, 131072, 0, 1376289, 131072, 0, 1376290, 131072, 0, 1441822, 131072, 0, 1441823, 131072, 0, 1441824, 131072, 0, 1441825, 131072, 0, 1441826, 131072, 0, 1507358, 131072, 0, 1507359, 131072, 0, 1507360, 131072, 0, 1507361, 131072, 0, 1507362, 131072, 0, 1572896, 131072, 0, 1572897, 131072, 0)
 
-[node name="unsorted" type="Node" parent="."]
-
-[node name="The commune" type="TileMap" parent="."]
+[node name="The commune" type="TileMap" parent="mod maps"]
+visible = false
 tile_set = ExtResource("3_vwjdp")
 format = 2
 layer_0/tile_data = PackedInt32Array(1572893, 196608, 0)
 
-[node name="duplicate91" type="TileMap" parent="."]
+[node name="Madriguera Evolution" type="TileMap" parent="mod maps"]
+visible = false
+tile_set = ExtResource("3_vwjdp")
+format = 2
+layer_0/tile_data = PackedInt32Array(2424866, 0, 0, 2424867, 0, 0, 2424868, 0, 0, 2490402, 0, 0, 2490403, 0, 0, 2490404, 0, 0)
+
+[node name="unsorted" type="Node" parent="."]
+
+[node name="duplicate92" type="TileMap" parent="."]
 visible = false
 tile_set = ExtResource("3_vwjdp")
 format = 2
@@ -10872,7 +10879,9 @@ Eerie Country
 Eerie Country/Stadium
 Save Our Stations!
 Dirkerdam Alpha
-Dirkerdam Alpha/Taylorsville"
+Dirkerdam Alpha/Taylorsville
+The commune
+Madriguera Evolution"
 tab_size = 0
 script = ExtResource("9_yneyi")
 
@@ -11011,13 +11020,16 @@ script = ExtResource("11_0bbie")
 [node name="version no ui" type="CanvasLayer" parent="Camera2D"]
 
 [node name="version no" type="RichTextLabel" parent="Camera2D/version no ui"]
-anchors_preset = 2
+anchors_preset = 3
+anchor_left = 1.0
 anchor_top = 1.0
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 985.0
+offset_left = -167.0
 offset_top = -24.0
-offset_right = 1140.0
+offset_right = -12.0
 offset_bottom = -5.0
+grow_horizontal = 0
 grow_vertical = 0
 theme_override_font_sizes/normal_font_size = 12
 bbcode_enabled = true
