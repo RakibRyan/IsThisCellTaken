@@ -9417,6 +9417,11 @@ tile_set = ExtResource("3_vwjdp")
 format = 2
 layer_0/tile_data = PackedInt32Array(1441833, 262144, 0)
 
+[node name="BlackMarketRaft" type="TileMap" parent="mod maps"]
+tile_set = ExtResource("3_vwjdp")
+format = 2
+layer_0/tile_data = PackedInt32Array(1441835, 262144, 1)
+
 [node name="Shortrest (Mapjam Version)" type="TileMap" parent="mod maps"]
 tile_set = ExtResource("3_vwjdp")
 format = 2
@@ -10520,7 +10525,7 @@ layer_0/tile_data = PackedInt32Array(2424866, 0, 0, 2424867, 0, 0, 2424868, 0, 0
 
 [node name="unsorted" type="Node" parent="."]
 
-[node name="duplicate92" type="TileMap" parent="."]
+[node name="duplicate93" type="TileMap" parent="."]
 visible = false
 tile_set = ExtResource("3_vwjdp")
 format = 2
