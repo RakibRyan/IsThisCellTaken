@@ -18,7 +18,7 @@ config/icon="res://art/icons/icon.jpg"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/Code collapse toggler/plugin.cfg", "res://addons/ColorPreview/plugin.cfg", "res://addons/QuickPluginManager/plugin.cfg", "res://addons/collapse_folders/plugin.cfg", "res://addons/diagnosticlist/plugin.cfg", "res://addons/dock_slot_expander/plugin.cfg", "res://addons/godotsize/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/label_font_auto_sizer/plugin.cfg", "res://addons/project-time-tracker/plugin.cfg", "res://addons/script-name-on-top/plugin.cfg", "res://addons/spanning_table/plugin.cfg", "res://addons/super_spector/plugin.cfg")
+enabled=PackedStringArray("res://addons/Code collapse toggler/plugin.cfg", "res://addons/ColorPreview/plugin.cfg", "res://addons/QuickPluginManager/plugin.cfg", "res://addons/collapse_folders/plugin.cfg", "res://addons/diagnosticlist/plugin.cfg", "res://addons/dock_slot_expander/plugin.cfg", "res://addons/godotsize/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/label_font_auto_sizer/plugin.cfg", "res://addons/mouse_coordinates/plugin.cfg", "res://addons/project-time-tracker/plugin.cfg", "res://addons/script-name-on-top/plugin.cfg", "res://addons/spanning_table/plugin.cfg", "res://addons/super_spector/plugin.cfg")
 
 [importer_defaults]
 
