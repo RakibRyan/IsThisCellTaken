@@ -42,5 +42,3 @@ func _process(_delta):
 	extracted_names.clear()
 	tilemaps_with_tiles_in_coord.clear()
 	findTilemapsWithCoordinate()
-
-
