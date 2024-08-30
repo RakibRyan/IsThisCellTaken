@@ -19,4 +19,3 @@ func _process(_delta):
 		#if rest_elements != "":
 			#text += "|[color=red]%s[/color]" % rest_elements
 		#self.text = text # Assign the text to self.text
-

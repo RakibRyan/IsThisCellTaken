@@ -19,8 +19,3 @@ func _unhandled_input(event):
 			#set_cell(0, cursor_coordinate.tile_mouse_pos, 1 ,Vector2i(0,0))
 			pass
 	pass
-
-
-
-
-

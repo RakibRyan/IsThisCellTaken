@@ -40,5 +40,3 @@ This mod will help you find out if a cell already has a map mod on it or not.
 • Auto conflict finder
 
 • Auto conflict gui
-
-

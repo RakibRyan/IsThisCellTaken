@@ -25,4 +25,3 @@ func ready():
 		#text_to_display += element + "\n"
 	## Set the text to the RichTextLabel
 	#self.text = text_to_display
-

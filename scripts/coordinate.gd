@@ -16,4 +16,3 @@ func cursor_coordinate():  # print(camera2d.scale)
 # called every frame to draw cursor
 func _process(_delta):  #delta do it need it?
 	cursor_coordinate()
-
