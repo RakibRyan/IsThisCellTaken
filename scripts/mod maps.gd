@@ -28,5 +28,3 @@ func _on_toggle_map_overlays_toggled(_toggled_on):
 		self.visible = true
 		pass
 	pass
-
-

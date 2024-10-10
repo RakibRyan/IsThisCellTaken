@@ -8921,6 +8921,29 @@ script = ExtResource("2_w2jkp")
 [node name="mod maps" type="Node2D" parent="."]
 script = ExtResource("3_77yy7")
 
+[node name="New Albany" type="TileMap" parent="mod maps"]
+tile_set = ExtResource("3_vwjdp")
+format = 2
+layer_0/tile_data = PackedInt32Array(36, 983040, 0, 37, 983040, 0, 38, 983040, 0, 39, 983040, 0, 40, 983040, 0, 41, 983040, 0, 65577, 983040, 0, 65578, 983040, 0, 65579, 983040, 0, 42, 983040, 0, 43, 983040, 0, 44, 983040, 0, 45, 983040, 0, 46, 983040, 0, 47, 983040, 0, 48, 983040, 0, 49, 983040, 0, 65572, 983040, 0, 131108, 983040, 0, 65573, 983040, 0, 65574, 983040, 0, 65575, 983040, 0, 65576, 983040, 0, 65580, 983040, 0, 65581, 983040, 0, 65582, 983040, 0, 65583, 983040, 0, 65584, 983040, 0, 65585, 983040, 0, 131109, 983040, 0, 131110, 983040, 0, 131111, 983040, 0, 131112, 983040, 0, 131113, 983040, 0, 131114, 983040, 0, 131115, 983040, 0, 131116, 983040, 0, 131117, 983040, 0, 131118, 983040, 0, 131119, 983040, 0, 131120, 983040, 0, 131121, 983040, 0)
+
+[node name="Jeffersonville, Mansion" type="TileMap" parent="mod maps/New Albany"]
+visible = false
+tile_set = ExtResource("3_vwjdp")
+format = 2
+layer_0/tile_data = PackedInt32Array(65575, 65536, 0, 65576, 65536, 0, 65577, 65536, 0, 131113, 65536, 0, 131114, 65536, 0, 131115, 65536, 0, 131116, 65536, 0, 131117, 65536, 0, 131118, 65536, 0, 131119, 65536, 0, 131120, 65536, 0, 65584, 65536, 0, 65583, 65536, 0, 65582, 65536, 0, 65581, 65536, 0, 65580, 65536, 0, 65579, 65536, 0, 65578, 65536, 0, 131111, 65536, 0, 131112, 65536, 0)
+
+[node name="McAlpine Locks and Dam" type="TileMap" parent="mod maps/New Albany"]
+visible = false
+tile_set = ExtResource("3_vwjdp")
+format = 2
+layer_0/tile_data = PackedInt32Array(65576, 393216, 0, 65577, 393216, 0, 65578, 393216, 0, 131112, 393216, 0, 131113, 393216, 0, 131114, 393216, 0, 196648, 393216, 0, 196649, 393216, 0, 196650, 393216, 0)
+
+[node name="Christmas Village" type="TileMap" parent="mod maps/New Albany"]
+visible = false
+tile_set = ExtResource("3_vwjdp")
+format = 2
+layer_0/tile_data = PackedInt32Array(131119, 262144, 0, 196655, 262144, 0)
+
 [node name="Dead world" type="TileMap" parent="mod maps"]
 tile_set = ExtResource("3_vwjdp")
 format = 2
@@ -8942,23 +8965,6 @@ visible = false
 tile_set = ExtResource("3_vwjdp")
 format = 2
 layer_0/tile_data = PackedInt32Array(196648, 786432, 0, 262184, 786432, 0)
-
-[node name="Jeffersonville, Mansion" type="TileMap" parent="mod maps"]
-tile_set = ExtResource("3_vwjdp")
-format = 2
-layer_0/tile_data = PackedInt32Array(65575, 65536, 0, 65576, 65536, 0, 65577, 65536, 0, 131113, 65536, 0, 131114, 65536, 0, 131115, 65536, 0, 131116, 65536, 0, 131117, 65536, 0, 131118, 65536, 0, 131119, 65536, 0, 131120, 65536, 0, 65584, 65536, 0, 65583, 65536, 0, 65582, 65536, 0, 65581, 65536, 0, 65580, 65536, 0, 65579, 65536, 0, 65578, 65536, 0, 131111, 65536, 0, 131112, 65536, 0)
-
-[node name="Christmas Village" type="TileMap" parent="mod maps/Jeffersonville, Mansion"]
-visible = false
-tile_set = ExtResource("3_vwjdp")
-format = 2
-layer_0/tile_data = PackedInt32Array(131119, 262144, 0, 196655, 262144, 0)
-
-[node name="McAlpine Locks and Dam" type="TileMap" parent="mod maps/Jeffersonville, Mansion"]
-visible = false
-tile_set = ExtResource("3_vwjdp")
-format = 2
-layer_0/tile_data = PackedInt32Array(65576, 393216, 0, 65577, 393216, 0, 65578, 393216, 0, 131112, 393216, 0, 131113, 393216, 0, 131114, 393216, 0, 196648, 393216, 0, 196649, 393216, 0, 196650, 393216, 0)
 
 [node name="Louisville Docks" type="TileMap" parent="mod maps"]
 tile_set = ExtResource("3_vwjdp")
@@ -9520,6 +9526,11 @@ visible = false
 tile_set = ExtResource("3_vwjdp")
 format = 2
 layer_0/tile_data = PackedInt32Array(1507347, 196608, 0, 1507348, 196608, 0, 1507349, 196608, 0, 1507350, 196608, 0, 1572883, 196608, 0, 1572884, 196608, 0, 1572885, 196608, 0, 1572886, 196608, 0, 1638419, 196608, 0, 1638420, 196608, 0, 1638421, 196608, 0, 1638422, 196608, 0)
+
+[node name="SHELTER 24 24" type="TileMap" parent="mod maps"]
+tile_set = ExtResource("3_vwjdp")
+format = 2
+layer_0/tile_data = PackedInt32Array(1572888, 262144, 1)
 
 [node name="Greenport, KY" type="TileMap" parent="mod maps"]
 tile_set = SubResource("TileSet_wiotu")
@@ -10593,12 +10604,47 @@ layer_0/tile_data = PackedInt32Array(2424866, 0, 0, 2424867, 0, 0, 2424868, 0, 0
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_set = SubResource("TileSet_41wvs")
 
-[node name="duplicate95" type="TileMap" parent="."]
+[node name="Ooey\'s Auto Salvage" type="TileMap" parent="."]
+tile_set = ExtResource("3_vwjdp")
+format = 2
+layer_0/tile_data = PackedInt32Array(2031648, 0, 1)
+
+[node name="Sagewood North" type="TileMap" parent="."]
+tile_set = ExtResource("3_vwjdp")
+format = 2
+layer_0/tile_data = PackedInt32Array(2490403, 851968, 0, 2490404, 851968, 0, 2424868, 851968, 0)
+
+[node name="Ellroy" type="TileMap" parent="."]
+tile_set = ExtResource("3_vwjdp")
+format = 2
+layer_0/tile_data = PackedInt32Array(1703948, 851968, 0, 1769484, 851968, 0, 1703949, 851968, 0, 1769485, 851968, 0)
+
+[node name="Old Mill" type="TileMap" parent="."]
+tile_set = ExtResource("3_vwjdp")
+format = 2
+layer_0/tile_data = PackedInt32Array(1769484, 0, 1)
+
+[node name="Eventure Island" type="TileMap" parent="."]
+tile_set = ExtResource("3_vwjdp")
+format = 2
+layer_0/tile_data = PackedInt32Array(786436, 393216, 0, 1114116, 393216, 0, 1114121, 393216, 0, 786441, 393216, 0, 786440, 393216, 0, 786439, 393216, 0, 786438, 393216, 0, 786437, 393216, 0, 851972, 393216, 0, 917508, 393216, 0, 983044, 393216, 0, 1048580, 393216, 0, 1114117, 393216, 0, 1114118, 393216, 0, 1114119, 393216, 0, 1114120, 393216, 0, 1048585, 393216, 0, 983049, 393216, 0, 917513, 393216, 0, 851977, 393216, 0, 851976, 393216, 0, 851975, 393216, 0, 851974, 393216, 0, 851973, 393216, 0, 917509, 393216, 0, 983045, 393216, 0, 1048581, 393216, 0, 1048582, 393216, 0, 1048583, 393216, 0, 1048584, 393216, 0, 983048, 393216, 0, 917512, 393216, 0, 917511, 393216, 0, 917510, 393216, 0, 983047, 393216, 0, 983046, 393216, 0)
+
+[node name="Secretz MarchRidge Research" type="TileMap" parent="."]
+tile_set = ExtResource("3_vwjdp")
+format = 2
+layer_0/tile_data = PackedInt32Array(2621474, 851968, 0, 2687010, 851968, 0)
+
+[node name="Secretz Rosewood Fossoil Blockade" type="TileMap" parent="."]
+tile_set = ExtResource("3_vwjdp")
+format = 2
+layer_0/tile_data = PackedInt32Array(2621467, 0, 0)
+
+[node name="duplicate103" type="TileMap" parent="."]
 visible = false
 tile_set = ExtResource("3_vwjdp")
 format = 2
 
-[node name="duplicate94" type="TileMap" parent="."]
+[node name="duplicate101" type="TileMap" parent="."]
 visible = false
 tile_set = ExtResource("3_vwjdp")
 format = 2

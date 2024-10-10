@@ -13,7 +13,8 @@ config_version=5
 config/name="Is This Cell Taken"
 run/main_scene="res://scenes/zomboid41map.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-boot_splash/image="res://art/splash screen/pink-dark.png"
+boot_splash/fullsize=false
+boot_splash/use_filter=false
 config/icon="res://art/icons/icon.jpg"
 
 [editor_plugins]
