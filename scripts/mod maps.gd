@@ -4,26 +4,26 @@ extends Node2D
 @export var total_no_of_maps:int
 
 #-------------------------------------------------------------------------
-func _ready():
-	print("ready")  # Debug
-	modded_tilemaps = get_children()  # Get only TileMaps
-	total_no_of_maps = modded_tilemaps.size()
-	print("Total TileMaps:", total_no_of_maps)  # Debug
-	for tile in modded_tilemaps:
-		var temp = str(tile)
-		temp = temp.get_slice(":", 0)
-		map_list.append(temp)
-		print(temp)
+#func _ready():
+	#print("ready")  # Debug
+	#modded_tilemaps = get_children()  # Get only TileMaps
+	#total_no_of_maps = modded_tilemaps.size()
+	#print("Total TileMaps:", total_no_of_maps)  # Debug
+	#for tile in modded_tilemaps:
+		#var temp = str(tile)
+		#temp = temp.get_slice(":", 0)
+		#map_list.append(temp)
+		#print(temp)
 	#print(map_list)
 
 #-----------This is the original code------------------------------------
-# find all tile maps and slices them
-#func _ready():
-	#print("ready") #Debug
-	#modded_tilemaps = find_children("*", "TileMap") #print(modded_tilemaps)
-	#total_no_of_maps = modded_tilemaps.size()
-	#print("Total number of maps: ", total_no_of_maps)
-	#print_tree()
+ #find all tile maps and slices them
+func _ready():
+	print("ready") #Debug
+	modded_tilemaps = find_children("*", "TileMap") #print(modded_tilemaps)
+	total_no_of_maps = modded_tilemaps.size()
+	print("Total number of maps: ", total_no_of_maps)
+	print_tree()
 	#print(map_list)
 	#print(modded_tilemaps)
 #-----------------------------------------------------------------------------------------
