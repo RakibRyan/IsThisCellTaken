@@ -14,7 +14,7 @@ func _ready():
 		temp = temp.get_slice(":", 0)
 		map_list.append(temp)
 		print(temp)
-	print(map_list)
+	#print(map_list)
 
 #-----------This is the original code------------------------------------
 # find all tile maps and slices them

@@ -23,7 +23,8 @@ func findTilemapsWithCoordinate() -> Array:
 		var temp = str(tile)
 		temp = temp.get_slice(":", 0)
 		extracted_names.append(temp)
-	extracted_names.remove_at(0)
+	if extracted_names.size() != 0:
+		extracted_names.remove_at(0)
 	
 	#if extracted_names.size() == 0:
 		#print("No Maps here")
