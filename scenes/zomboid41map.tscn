@@ -10588,8 +10588,6 @@ tile_set = ExtResource("3_vwjdp")
 format = 2
 layer_0/tile_data = PackedInt32Array(2424866, 0, 0, 2424867, 0, 0, 2424868, 0, 0, 2490402, 0, 0, 2490403, 0, 0, 2490404, 0, 0)
 
-[node name="TileMapLayer" type="TileMapLayer" parent="mod maps"]
-
 [node name="unsorted" type="Node" parent="."]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
