@@ -4,16 +4,16 @@ extends Node2D
 @export var total_no_of_maps:int
 
 #-------------------------------------------------------------------------
-func _ready():
-	print("ready")  # Debug
-	modded_tilemaps = get_children()  # Get only TileMaps
-	total_no_of_maps = modded_tilemaps.size()
-	print("Total TileMaps:", total_no_of_maps)  # Debug
-	for tile in modded_tilemaps:
-		var temp = str(tile)
-		temp = temp.get_slice(":", 0)
-		map_list.append(temp)
-		print(temp)
+#func _ready():
+	#print("ready")  # Debug
+	#modded_tilemaps = get_children()  # Get only TileMaps
+	#total_no_of_maps = modded_tilemaps.size()
+	#print("Total TileMaps:", total_no_of_maps)  # Debug
+	#for tile in modded_tilemaps:
+		#var temp = str(tile)
+		#temp = temp.get_slice(":", 0)
+		#map_list.append(temp)
+		#print(temp)
 	#print(map_list)
 
 #-----------This is the original code------------------------------------
@@ -80,6 +80,31 @@ func _ready():
 	## Debugging output of the scene tree
 	#print_tree()
 
+
+
+#----------------------------------------------------------------
+
+func _ready():
+	print("finding all tilemaps")  # Debug
+	var modded_tilemaps = get_all_tilemaps(self)  # Get all TileMaps recursively
+	var total_no_of_maps = modded_tilemaps.size()
+	print("Total TileMaps:", total_no_of_maps)  # Debug
+	for tile in modded_tilemaps:
+		var temp = str(tile)
+		temp = temp.get_slice(":", 0)
+		map_list.append(temp)
+		print(temp)
+
+# Recursive function to collect all TileMaps in the scene tree
+func get_all_tilemaps(node: Node) -> Array:
+	var tilemaps = []
+	if node is TileMap:
+		tilemaps.append(node)
+
+	for child in node.get_children():
+		tilemaps += get_all_tilemaps(child)  # Recursively add child TileMaps
+		
+	return tilemaps
 
 
 
