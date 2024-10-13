@@ -9,7 +9,12 @@ func _ready():
 	modded_tilemaps = get_children()  # Get only TileMaps
 	total_no_of_maps = modded_tilemaps.size()
 	print("Total TileMaps:", total_no_of_maps)  # Debug
-
+	for tile in modded_tilemaps:
+		var temp = str(tile)
+		temp = temp.get_slice(":", 0)
+		map_list.append(temp)
+		print(temp)
+	print(map_list)
 
 #-----------This is the original code------------------------------------
 # find all tile maps and slices them
@@ -18,11 +23,7 @@ func _ready():
 	#modded_tilemaps = find_children("*", "TileMap") #print(modded_tilemaps)
 	#total_no_of_maps = modded_tilemaps.size()
 	#print("Total number of maps: ", total_no_of_maps)
-	for tile in modded_tilemaps:
-		var temp = str(tile)
-		temp = temp.get_slice(":", 0)
-		map_list.append(temp)
-	print_tree()
+	#print_tree()
 	#print(map_list)
 	#print(modded_tilemaps)
 #-----------------------------------------------------------------------------------------
