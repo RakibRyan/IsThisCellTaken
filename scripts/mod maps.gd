@@ -86,8 +86,8 @@ extends Node2D
 
 func _ready():
 	print("finding all tilemaps")  # Debug
-	var modded_tilemaps = get_all_tilemaps(self)  # Get all TileMaps recursively
-	var total_no_of_maps = modded_tilemaps.size()
+	modded_tilemaps = get_all_tilemaps(self)  # Get all TileMaps recursively
+	total_no_of_maps = modded_tilemaps.size()
 	print("Total TileMaps:", total_no_of_maps)  # Debug
 	for tile in modded_tilemaps:
 		var temp = str(tile)
